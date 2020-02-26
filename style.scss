@@ -1,0 +1,24 @@
+$background: #000;
+$text-white: #fff;
+
+body{
+    background: $background;
+    color: $text-white;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 60px;
+    flex-direction: column-reverse;
+    span{
+        display: block;
+        padding: 20px 20px 0;
+        background: linear-gradient(to bottom, #000 , #ff056f);
+    }
+}
