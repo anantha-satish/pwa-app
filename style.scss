@@ -7,18 +7,49 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    font-size: 60px;
-    flex-direction: column-reverse;
+    font-size: 20px;
+    flex-direction: column;
     span{
+        font-size: 42px;
         display: block;
-        padding: 20px 20px 0;
+        width: 100%;
+        text-align: center;
+        padding: 60px 30px;
         background: linear-gradient(to bottom, #000 , #ff056f);
+    }
+    img {
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div{
+        display: block;
+        background: #fff;
+        color: #ff056f;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        line-height: 36px;
+    }
+    button{
+        width: 100%;
+        display: block;
+        padding: 15px 20px;
+        cursor: pointer;
+        background: #a600f0;
+        color: #fff;
+        font-weight: 800;
+        box-shadow: none;
+        outline: none;
+        text-transform: uppercase;
+        border: none;
     }
 }

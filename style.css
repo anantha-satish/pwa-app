@@ -4,30 +4,59 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
-  font-size: 60px;
+  font-size: 20px;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div span {
+  font-size: 42px;
   display: block;
-  padding: 20px 20px 0;
+  width: 100%;
+  text-align: center;
+  padding: 60px 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ff056f));
   background: linear-gradient(to bottom, #000, #ff056f);
+}
+
+div img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div div {
+  display: block;
+  background: #fff;
+  color: #ff056f;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  line-height: 36px;
+}
+
+div button {
+  width: 100%;
+  display: block;
+  padding: 15px 20px;
+  cursor: pointer;
+  background: #a600f0;
+  color: #fff;
+  font-weight: 800;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

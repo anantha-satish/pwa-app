@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel='manifest' href='/manifest.json'>
 
 <head>
     <meta charset="utf-8">
@@ -12,10 +13,14 @@
 </head>
 
 <body>
-    <div>
+    <div>       
         <span>PWA Works Here...!</span>
         <img src="./images/online.jpg" alt="online" />
+        <div id="connectionStatus"></div>
+        <button id="requestButton">Make an HTTP request - do it!</button>
+        <div>Click on the button below to make an HTTP request.</div>    
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.js" type="text/javascript"></script>
     <script src="./index.js" type="text/javascript"></script>
     <script src="./service-worker.js" type="text/javascript"></script>
 </body>

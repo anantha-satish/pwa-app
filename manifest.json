@@ -1,0 +1,37 @@
+{
+  "name": "Satish Kumar",
+  "short_name": "SATURN",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "orientation": "portrait",
+	"scope" : "/",
+	"display" : "fullscreen",
+	"start_url" : "http://127.0.0.1:5500/",
+  "icons": [
+    {
+      "src": "images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "related_applications" : [],
+  "prefer_related_applications" : false,
+  "url" : "https://anantha-satish.github.io/satish/",
+  "splash_pages": null,
+  "generated" : "true"
+}

@@ -260,6 +260,51 @@ self.addEventListener('fetch', function(event) {
   }
 });
 
+self.addEventListener('message', (event) => {
+  console.log("What is your Name::::::: =>>> " + event.data);
+  console.log(event);
+  // event.ports[0].postMessage("Hey Mr. Client, what do YOU say?");
+});
+
+self.addEventListener('sync', function (event) {
+  if (event.tag === 'image-fetch') {
+    event.waitUntil(fetchDogImage());
+  }
+});
+function fetchDogImage() {
+  fetch('./images/offline.jpg')
+      .then(function (response) {
+          console.log(response);
+          return response;
+      })
+      .then(function (text) {
+          console.log('Request successful', text);
+      })
+      .catch(function (error) {
+          console.log('Request failed', error);
+      });
+}
+
+
+// self.addEventListener('message', function handler (event) {
+//   if (event.data.command === 'deleteCache') {
+//     caches.delete(event.data.key);
+//   }
+// });
+// var data = "My Name is Satish";
+
+
+const channel = new BroadcastChannel('sw-messages');
+channel.postMessage({title: 'Common on serive works'});
+self.onmessage = function(event) {
+  event.source; // instance of Client
+  event.data; // "Hi!"
+  // reply
+  // event.source.postMessage("Hey!");
+  console.log(event)
+};
+
+
 
 // *** Start of auto-included sw-toolbox code. ***
 /* 
@@ -290,3 +335,25 @@ toolbox.router.get(/this\\.is\\.a\\.regex/, toolbox.networkFirst, {});
 
 
 
+
+
+
+// This is the service worker with the Advanced caching
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+// if ("serviceWorker" in navigator) {
+//   if (navigator.serviceWorker.controller) {
+//     console.log("[PWA Builder] active service worker found, no need to register");
+//   } else {
+//     // Register the service worker
+//     navigator.serviceWorker
+//       .register("pwabuilder-sw.js", {
+//         scope: "./"
+//       })
+//       .then(function (reg) {
+//         console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+//       });
+//   }
+// }
