@@ -6,7 +6,7 @@
   "orientation": "portrait",
 	"scope" : "/",
 	"display" : "fullscreen",
-	"start_url" : "https://anantha-satish.github.io/satish/",
+	"start_url" : "https://anantha-satish.github.io/pwa-app/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
@@ -31,7 +31,7 @@
   ],
   "related_applications" : [],
   "prefer_related_applications" : false,
-  "url" : "https://anantha-satish.github.io/satish/",
+  "url" : "https://anantha-satish.github.io/pwa-app/",
   "splash_pages": null,
   "generated" : "true"
 }
