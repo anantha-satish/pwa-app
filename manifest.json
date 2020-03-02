@@ -6,7 +6,7 @@
   "orientation": "portrait",
 	"scope" : "/",
 	"display" : "fullscreen",
-	"start_url" : "http://127.0.0.1:5500/",
+	"start_url" : "https://anantha-satish.github.io/satish/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
