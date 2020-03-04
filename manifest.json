@@ -4,9 +4,9 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "orientation": "portrait",
-	"scope" : "/",
+	"scope" : "/pwa-app/",
 	"display" : "fullscreen",
-  "start_url": "/",
+	"start_url" : "https://anantha-satish.github.io/pwa-app/",
   "icons": [
     {
       "src": "./images/icons/icon-72x72.png",
