@@ -225,7 +225,7 @@
   function sendNotification(opacityRemaining) {
     let options = {
     body: 'Peggy wants a pretzel! You have ' + opacityRemaining  + ' seconds to feed her!',
-    icon: 'images/icons/icon-72x72.png'
+    icon: './images/icons/icon-72x72.png'
     };
     console.log(opacityRemaining)
     let notification = new Notification('Peggy says', options);
@@ -269,7 +269,7 @@
       function sendNotification(secondsLeft) {
         let options = {
         body: 'Peggy wants a pretzel! You have ' + (secondsLeft * 10 * 3) + 'seconds to feed her!',
-        icon: 'images/icons/icon-72x72.png',
+        icon: './images/icons/icon-72x72.png',
         actions: [
         {
         action: "feed", title: "Feed Peggy"
